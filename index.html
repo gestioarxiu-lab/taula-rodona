@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taula Rodona: Formació Equina i Inserció Laboral - Vilaformiu</title>
+    <title>Resum Taules Rodones: Formació Equina a Vilaformiu</title>
     <style>
         :root {
             --primary: #2d5a27;
@@ -31,16 +31,16 @@
 
         /* Header / Hero */
         header {
-            background: linear-gradient(rgba(27, 56, 24, 0.85), rgba(45, 90, 39, 0.9)), 
-                        url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;
+            background: linear-gradient(rgba(27, 56, 24, 0.88), rgba(45, 90, 39, 0.92)), 
+                        url('taula%201.jpeg') center/cover no-repeat;
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
 
         .header-container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
         }
 
@@ -48,41 +48,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
             margin-bottom: 25px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 12px 25px;
             border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
+            flex-wrap: wrap;
         }
 
-        .logos-bar span {
-            font-weight: 700;
-            color: var(--primary-dark);
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-        }
-
-        .logo-badge {
-            background-color: #e9ecef;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #495057;
+        .logos-bar img {
+            height: 45px;
+            width: auto;
+            object-fit: contain;
         }
 
         header h1 {
-            font-size: 2.3rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 12px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header p.subtitle {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #e2e8f0;
             font-weight: 300;
         }
@@ -94,15 +86,15 @@
             padding: 0 20px;
         }
 
-        /* Highlight Banner / Key Details */
-        .info-grid {
+        /* Key Metrics Banner */
+        .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 35px;
         }
 
-        .info-card {
+        .metric-card {
             background: var(--card-bg);
             padding: 22px;
             border-radius: 12px;
@@ -111,7 +103,7 @@
             text-align: center;
         }
 
-        .info-card h3 {
+        .metric-card h3 {
             font-size: 0.85rem;
             text-transform: uppercase;
             color: var(--text-muted);
@@ -119,7 +111,7 @@
             margin-bottom: 8px;
         }
 
-        .info-card p {
+        .metric-card p {
             font-size: 1.2rem;
             font-weight: 700;
             color: var(--primary-dark);
@@ -156,7 +148,7 @@
         .content-text {
             font-size: 1.05rem;
             color: #4a5568;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         /* Photo Gallery Grid */
@@ -172,11 +164,12 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #eee;
         }
 
         .gallery-item img {
             width: 100%;
-            height: 220px;
+            height: 260px;
             object-fit: cover;
             display: block;
             transition: transform 0.3s ease;
@@ -187,10 +180,10 @@
         }
 
         .gallery-caption {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.75);
             color: white;
-            padding: 8px 12px;
-            font-size: 0.85rem;
+            padding: 10px 14px;
+            font-size: 0.9rem;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -233,6 +226,31 @@
             color: var(--text-muted);
         }
 
+        /* Highlights / Conclusion Box */
+        .conclusion-box {
+            background-color: #eaf2e8;
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .conclusion-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .conclusion-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .conclusion-box li {
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -245,7 +263,8 @@
         @media (max-width: 600px) {
             header h1 { font-size: 1.7rem; }
             .section-card { padding: 20px; }
-            .logos-bar { flex-direction: column; gap: 8px; border-radius: 16px; }
+            .logos-bar { flex-direction: column; gap: 12px; border-radius: 16px; }
+            .logos-bar img { height: 35px; }
         }
     </style>
 </head>
@@ -253,89 +272,111 @@
 
     <header>
         <div class="header-container">
+            <!-- Noms de logos exactes del teu repositori -->
             <div class="logos-bar">
-                <span>VILAFORMIU</span>
-                <span class="logo-badge">CAVI GLOBAL</span>
-                <span class="logo-badge">CALABOTINS</span>
-                <span class="logo-badge">SOC</span>
+                <img src="Logo%20Vilaformiu.png" alt="Logo Vilaformiu">
+                <img src="Logo%20Cavi.png" alt="Logo Cavi Global">
+                <img src="Lobo%20Calabotins%20VFinal.jpg" alt="Logo Calabotins">
+                <img src="soc_2l.png" alt="Logo SOC">
             </div>
             
-            <h1>Taula Rodona: Formació Equina i Món Laboral</h1>
-            <p class="subtitle">Presentació i balanç dels cursos de Cura i Maneig de Cavalls i Ferrador (Programa FOAP24)</p>
+            <h1>Balanç Taules Rodones: Formació Equina i Món Laboral</h1>
+            <p class="subtitle">Anàlisi de les edicions 2023 i 2024 dels cursos de Cura, Maneig, Munta i Ferratge (Programa FOAP)</p>
         </div>
     </header>
 
     <div class="main-container">
 
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>Data de Celebració</h3>
-                <p>21 de Desembre, 2023</p>
+        <!-- Mètriques principals -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Edicions Celebrades</h3>
+                <p>2023 i 2024</p>
             </div>
-            <div class="info-card">
-                <h3>Ubicació</h3>
-                <p>Vilaformiu</p>
+            <div class="metric-card">
+                <h3>Alumnes Formats</h3>
+                <p>+90 per any</p>
             </div>
-            <div class="info-card">
-                <h3>Participació</h3>
-                <p>70 Persones Interessades</p>
+            <div class="metric-card">
+                <h3>Assistència Taules</h3>
+                <p>70+ Persones / edició</p>
             </div>
-            <div class="info-card">
-                <h3>Programa</h3>
-                <p>SOC - FOAP24</p>
+            <div class="metric-card">
+                <h3>Programa Formatiu</h3>
+                <p>SOC - FOAP</p>
             </div>
         </div>
 
+        <!-- Resum de les Taules -->
         <div class="section-card">
-            <h2 class="section-title">Finalitat de la Trobada</h2>
+            <h2 class="section-title">Resum de les Trobades (2023 - 2024)</h2>
             <p class="content-text">
-                La taula rodona celebrada a les instal·lacions de Vilaformiu va tenir com a objectiu principal <strong>informar sobre els cursos de formació professional ocupacional</strong> en les especialitats de <em>Cura i maneig de cavalls</em> i <em>Ferrador</em>, emmarcats en el programa <strong>FOAP24</strong>.
+                Durant les edicions celebrades al <strong>desembre del 2023</strong> i al <strong>desembre del 2024</strong> a Vilaformiu, es va presentar el balanç i l'impacte dels cursos de formació ocupacional en <em>Munta, cura i maneig de cavalls</em> i <em>Ofici de ferrador</em>[cite: 1].
             </p>
             <p class="content-text">
-                A més de presentar l'estructura acadèmica dels cursos, es va obrir un debat clau sobre la <strong>integració directa dels alumnes al món laboral</strong> i les oportunitats reals d'ocupabilitat dins del sector equí a Catalunya.
+                Aquestes jornades van servir com a punt de trobada entre docents, especialistes de la gestió formativa i persones interessades a professionalitzar-se en el treball pràctic de camp amb cavalls, la gestió d'instal·lacions equines i els requisits de certificació mitjançant el SOC[cite: 1].
             </p>
 
+            <!-- Imatges reals de les taules rodones -->
             <div class="photo-gallery">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800" alt="Aula de formació">
-                    <div class="gallery-caption">Aula de formació teòrica a Vilaformiu</div>
+                    <img src="taula%201.jpeg" alt="Sessió Taula Rodona 2023">
+                    <div class="gallery-caption">Taula Rodona - Edició Desembre 2023</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?auto=format&fit=crop&q=80&w=800" alt="Maneig de cavalls">
-                    <div class="gallery-caption">Pràctiques de cura i maneig equí</div>
+                    <img src="taula%202.jpeg" alt="Sessió Taula Rodona 2024">
+                    <div class="gallery-caption">Taula Rodona - Edició Desembre 2024</div>
                 </div>
             </div>
         </div>
 
+        <!-- Equip de ponents -->
         <div class="section-card">
-            <h2 class="section-title">Ponents i Participants a la Taula Rodona</h2>
+            <h2 class="section-title">Equip de Ponents i Coordinació</h2>
             <div class="speakers-grid">
                 
                 <div class="speaker-card">
                     <div class="speaker-name">Bernat Casals</div>
                     <span class="speaker-role">Director</span>
-                    <p class="speaker-desc">Lideratge del programa i presentació de les línies mestres del centre de formació de Vilaformiu.</p>
+                    <p class="speaker-desc">Direcció del centre de formació de Vilaformiu i coordinació dels programes de pràctiques i formació equina[cite: 1].</p>
                 </div>
 
                 <div class="speaker-card">
                     <div class="speaker-name">Neus Vilajosana</div>
                     <span class="speaker-role">Psicopedagoga</span>
-                    <p class="speaker-desc">Acompanyament en el procés d'aprenentatge, habilitats personals i orientació en la inserció laboral.</p>
+                    <p class="speaker-desc">Acompanyament en el procés d'aprenentatge, treball d'habilitats personals i orientació laboral[cite: 1].</p>
                 </div>
 
                 <div class="speaker-card">
                     <div class="speaker-name">Mies Bono</div>
                     <span class="speaker-role">Gestor (Calabotins)</span>
-                    <p class="speaker-desc">Especialista en requisits de formació, certificacions professionals i tramitació dels programes del SOC.</p>
+                    <p class="speaker-desc">Especialista en la gestió de requisits d'accés, programes del SOC i coordinació de la formació oficial[cite: 1].</p>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- Conclusions -->
+        <div class="section-card">
+            <h2 class="section-title">Conclusions i Impacte Formatiu</h2>
+            <p class="content-text">
+                El desenvolupament d'aquests dos anys de formació ha demostrat la creixent demanda de professionals preparats per a les tasques diàries del món equí.
+            </p>
+            
+            <div class="conclusion-box">
+                <h4>Punts Clau de Balanç:</h4>
+                <ul>
+                    <li>• <strong>Capacitació tècnica i pràctica:</strong> Més de 90 alumnes formats per any en atenció, maneig diari, munta i tècniques de ferratge.</li>
+                    <li>• <strong>Orientació al treball real:</strong> Pràctiques directes a les instal·lacions per cobrir les necessitats reals de cavalleries i centres ecuestres.</li>
+                    <li>• <strong>Acompanyament integral:</strong> Unió entre formació tècnica i suport psicopedagògic per facilitar la incorporació al mercat de treball.</li>
+                </ul>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2023-2024 Vilaformiu - Formació Equina. Programa finançat pel Servei Públic d'Ocupació de Catalunya (SOC).</p>
+        <p>&copy; 2023-2026 Vilaformiu - Formació Equina. Programes finançats pel Servei Públic d'Ocupació de Catalunya (SOC).</p>
     </footer>
 
 </body>
